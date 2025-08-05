@@ -132,20 +132,20 @@ const AboutPage = () => {
       localStorage.getItem("certificates") || "[]"
     );
 
-    const startDate = new Date("2021-11-06");
-    const today = new Date();
-    const experience =
-      today.getFullYear() -
-      startDate.getFullYear() -
-      (today <
-      new Date(today.getFullYear(), startDate.getMonth(), startDate.getDate())
-        ? 1
-        : 0);
+    // const startDate = new Date("2023-02-10");
+    // const today = new Date();
+    // const experience =
+    //   today.getFullYear() -
+    //   startDate.getFullYear() -
+    //   (today <
+    //   new Date(today.getFullYear(), startDate.getMonth(), startDate.getDate())
+    //     ? 1
+    //     : 0);
 
     return {
       totalProjects: storedProjects.length,
-      totalCertificates: storedCertificates.length,
-      YearExperience: experience,
+      totalCertificates: "Bachelor",
+      YearExperience: "1.5+",
     };
   }, []);
 
@@ -188,8 +188,8 @@ const AboutPage = () => {
         icon: Award,
         color: "from-[#a855f7] to-[#6366f1]",
         value: totalCertificates,
-        label: "Certificates",
-        description: "Professional skills validated",
+        label: "Certificates / Degree",
+        description: "Bachelor of information technology HCMUS",
         animation: "fade-up",
       },
       {
@@ -236,13 +236,13 @@ const AboutPage = () => {
               data-aos="fade-right"
               data-aos-duration="1500"
             >
-              Motivated Junior Frontend Developer with 1.5+ years of experience
-              specializing in React, Next.js, and Tailwind CSS. Skilled in
-              building responsive designs and optimizing performance to deliver
-              seamless and engaging user experiences. Passionate about
-              contributing to innovative projects, enhancing user engagement,
-              and achieving faster load times through efficient coding and
-              collaborative teamwork.
+              Motivated Frontend Developer with 2 years of hands-on experience
+              specializing in React, Next.js, and Tailwind CSS. Adept at
+              crafting responsive, high-performance web interfaces with a focus
+              on user experience and modern design principles. Passionate about
+              building innovative digital products, enhancing user engagement,
+              and collaborating effectively within cross-functional teams to
+              deliver scalable and maintainable solutions.
             </p>
 
             <div className="flex flex-col lg:flex-row items-center lg:items-start gap-4 lg:gap-4 lg:px-0 w-full">
