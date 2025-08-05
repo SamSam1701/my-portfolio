@@ -6,7 +6,6 @@ import {
   Globe,
   ArrowUpRight,
   Sparkles,
-  UserCheck,
 } from "lucide-react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -34,6 +33,7 @@ const Header = memo(() => (
     </p>
   </div>
 ));
+Header.displayName = "Header";
 
 const ProfileImage = memo(() => (
   <div className="flex justify-end items-center sm:p-12 sm:py-0 sm:pb-0 p-0 py-2 pb-2">
@@ -71,6 +71,7 @@ const ProfileImage = memo(() => (
     </div>
   </div>
 ));
+ProfileImage.displayName = "ProfileImage";
 
 const StatCard = memo(
   ({ icon: Icon, color, value, label, description, animation }) => (
@@ -123,6 +124,8 @@ const StatCard = memo(
     </div>
   )
 );
+
+StatCard.displayName = "StatCard";
 
 const AboutPage = () => {
   // Memoized calculations
